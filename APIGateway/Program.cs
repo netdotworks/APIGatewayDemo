@@ -18,6 +18,7 @@ namespace APIGateway
 
             builder.ConfigureServices(s => s.AddSingleton(builder))
                 .ConfigureAppConfiguration(ic => ic.AddJsonFile("configuration.json"))
+                .UseUrls("http://*:9020")
                 .UseStartup<Startup>();
 
             return builder;
