@@ -21,8 +21,6 @@ namespace ProductsAPI.Controllers
 
         public IActionResult GetProducts()
         {
-
-
             return Json(_products);
         }
 
